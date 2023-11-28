@@ -1,0 +1,82 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: #0074D9;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0;
+}
+
+
+.header {
+    background-color: #0074D9;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.empleadoDetalle {
+    padding: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.boton {
+    text-align: center;
+    margin-top: auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0074D9;
+    color: #ffffff;
+    text-decoration: none;
+    max-width: 200px; 
+
+    margin-top: 30px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0074D9;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.item-menu {
+    padding: 10px;
+}
+
+.item-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.item-menu a:hover {
+    color: #ff4d4d;
+}
