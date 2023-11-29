@@ -1,0 +1,213 @@
+/* estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100px;
+  }
+
+  /* Estilos para el título de la tienda */
+h1 {
+    color: #2c3e50; /* Color del texto */
+    font-family: 'Montserrat', sans-serif; /* Tipo de fuente */
+    text-align: center; /* Alineación del texto */
+    margin-top: 30px; /* Margen superior */
+    margin-bottom: 40px; /* Margen inferior */
+    font-size: 2.5em; /* Tamaño de la fuente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+}
+
+
+ul {
+    list-style-type: none; /* Quitar los estilos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: space-between; /* Distribuir elementos de forma equitativa */
+}
+  
+li {
+    margin: 0;
+}
+  
+a {
+    text-decoration: none; /* Quitar la subraya de los enlaces */
+    color: white; /* Color del texto del enlace */
+    padding: 10px;
+    display: flex;
+    align-items: center; /* Alinear verticalmente al centro */
+}
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .logo{
+    width: 70px;
+    height: 70px;
+  }
+  
+  .logOut{
+    color: red;
+    margin-left: 850%;
+  }
+
+  .logIn{
+    color: red;
+    margin-left: 850%;
+  }
+
+  .contenedorPromociones{
+    width: 100%;
+    height: 100%;
+  }
+
+  .imgPromociones {
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    border: 2px solid #333;
+    margin-bottom: 100px;
+  }
+  
+  .imgPromociones img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ajustar la imagen sin perder la proporción */
+    object-position: center; /* Centrar la imagen */
+    position: relative;
+  }
+
+  .imgPromociones .promocion {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .botonNavegacion {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .botonAnterior {
+    left: 200px;
+  }
+
+  .botonSiguiente {
+    right: 200px;
+  }
+
+  .contenedorIndicadores {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 10px; /* Espaciado desde el contenido superior */
+  }
+
+  .indicador {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px; /* Espaciado entre los indicadores */
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .promocion-actual {
+    background-color: #3498db; /* Color para resaltar la promoción actual */
+  }
+
+  .contenedorProductos{
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Estilos generales para los productos */
+.contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.producto {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.producto p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilos para el menú desplegable */
+select {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Agrega un margen entre el menú desplegable y el botón */
+select {
+    margin-right: 10px;
+}
+
+/* Estilos para el botón agregar al carrito */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
