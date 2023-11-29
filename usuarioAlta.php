@@ -59,15 +59,13 @@
 <body>
 
     <header>
-      <nav>
-        <ul>
-          <li><a href="#""><img src="img/InfinitiTech_Universe_logo_shopping.jpg" alt="InfinitiTech Universe Logo" class="logo"></a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Carrito</a></li>
-        </ul>
-      </nav>
+    <div class="fila">
+                <div class="item-menu"><a href="index.php"><img src="img/InfinitiTech_Universe_logo_shopping.jpg" alt="InfinitiTech Universe Logo" class="logo"></a></div>
+                <div class="item-menu"><a href="index.php">Home</a></div>
+                <div class="item-menu"><a href="#">Productos</a></div>
+                <div class="item-menu"><a href="#">Contacto</a></div>
+                <div class="item-menu"><a href="inicioSesion.php">Iniciar Sesión</a></div> 
+      </div>
     </header>
 
     <h1>Registro</h1>

@@ -97,22 +97,25 @@
   <body>
 
     <header>
-      <nav>
-        <ul>
-          <li><a href="#""><img src="img/InfinitiTech_Universe_logo_shopping.jpg" alt="InfinitiTech Universe Logo" class="logo"></a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Carrito</a></li>
-          <?php if ($nombre) : ?>
-                    <!-- Si hay una sesión abierta -->
-                    <li><a class="logOut" href="funciones/cerrarSesion.php">Cerrar sesión</a></li>
+
+      <div class="fila">
+                <div class="item-menu"><a href="#""><img src="img/InfinitiTech_Universe_logo_shopping.jpg" alt="InfinitiTech Universe Logo" class="logo"></a></div>
+                <div class="item-menu"><a href="#">Home</a></div>
+                <div class="item-menu"><a href="producto.php">Productos</a></div>
+                <div class="item-menu"><a href="#">Contacto</a></div>
+                <?php if ($nombre) : ?>
+
+                  <div class="item-menu"><a href="#">Carrito</a></div>
+                  <div class="item-menu"><a href="funciones/cerrarSesion.php">Cerrar sesión</a></div> 
+
                 <?php else : ?>
-                    <!-- Si no hay una sesión abierta -->
-                    <li><a class="logIn" href="inicioSesion.php">Iniciar sesión</a></li>
+
+                  <div class="item-menu"><a href="usuarioAlta.php">Registrarse</a></div>
+                  <div class="item-menu"><a href="inicioSesion.php">Iniciar Sesión</a></div>
+
                 <?php endif; ?>        
-          </ul>
-      </nav>
+      </div>
+
     </header>
 
     <h1>InfinitiTech Universe</h1>
@@ -157,8 +160,10 @@
       $stock = $producto['stock'];
   
       echo "<div class='producto'>";
+      echo "<a href='producto_detalle.php?id={$producto['id']}'>"; // Enlace al detalle del producto
       echo "<img src='admin/productos/archivos/$imagen' alt='$nombreProducto'>";
       echo "<h3>$nombreProducto</h3>";
+      echo "</a>";
       echo "<p>Precio: $precio</p>";
   
       // Verificar si hay una sesión iniciada

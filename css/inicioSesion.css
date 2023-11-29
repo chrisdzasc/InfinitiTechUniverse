@@ -28,26 +28,30 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
 }
 
-ul {
-    list-style-type: none; /* Quitar los estilos de la lista */
-    margin: 0;
-    padding: 0;
+.fila {
     display: flex;
-    align-items: center; /* Alinear verticalmente al centro */
-    justify-content: space-between; /* Distribuir elementos de forma equitativa */
-}
-
-li {
-    margin: 0;
-}
-
-a {
-    text-decoration: none; /* Quitar la subraya de los enlaces */
-    color: white; /* Color del texto del enlace */
+    justify-content: space-around;
+    color: #ffffff;
     padding: 10px;
-    display: flex;
+    width: 100%;
     align-items: center; /* Alinear verticalmente al centro */
-}
+  
+  }
+  
+  .item-menu {
+    padding: 10px;
+  }
+  
+  .item-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .item-menu a:hover {
+    color: #ff4d4d;
+  }
 
 footer {
     background-color: #333;
