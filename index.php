@@ -102,7 +102,7 @@
                 <div class="item-menu"><a href="#""><img src="img/InfinitiTech_Universe_logo_shopping.jpg" alt="InfinitiTech Universe Logo" class="logo"></a></div>
                 <div class="item-menu"><a href="#">Home</a></div>
                 <div class="item-menu"><a href="producto.php">Productos</a></div>
-                <div class="item-menu"><a href="#">Contacto</a></div>
+                <div class="item-menu"><a href="contacto_formulario.php">Contacto</a></div>
                 <?php if ($nombre) : ?>
 
                   <div class="item-menu"><a href="#">Carrito</a></div>
